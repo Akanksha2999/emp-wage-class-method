@@ -6,7 +6,7 @@ public class EmpWage {
     public static final int WORKING_DAYS = 20;
     public static final int MAX_WORKING_HOURS = 100;
 
-    public static void main(String[] args) {
+    public static int computeEmpWage() {
         System.out.println("Welcome to Employee Wage Computation Program");
 
         //Initializing variables
@@ -31,11 +31,15 @@ public class EmpWage {
                 }
                 totalEmpHours += empHours;
                 //Printing total working days and hours
-                System.out.println("DAY#:" + totalWorkingDays + "Emp hour:" + empHours);
+                System.out.println("DAY#: " + totalWorkingDays + " Emp hour: " + empHours);
             }
         //Calculating total employee wage and then printing it
-        totalEmpWage += totalEmpHours * EMP_RATE_PER_HOUR;
-        System.out.println("Employees's Total Wage is:" + totalEmpWage);
+        totalEmpWage = totalEmpHours * EMP_RATE_PER_HOUR;
+        System.out.println("Employees's Total Wage is: " + totalEmpWage);
+        return totalEmpWage;
     }
 
+    public static void main(String[] args) {
+        computeEmpWage();
+    }
 }

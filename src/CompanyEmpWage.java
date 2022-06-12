@@ -1,3 +1,9 @@
+interface InterfaceEmpWage {
+    public void addCompanyEmpWage(String companyName, int empRatePerhr, int numOfWorkingDays, int maxHoursPerMonth);
+
+    public void computeEmpWage();
+}
+
 public class CompanyEmpWage {
     private String companyName;
     private int empRatePerHr;

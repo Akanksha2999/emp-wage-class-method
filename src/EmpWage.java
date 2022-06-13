@@ -53,8 +53,8 @@ class EmpWage implements InterfaceEmpWage {
             int empWage = empHrs * companyEmpWage.getEmpRatePerHr();
             totalEmpHrs += empHrs;
             totalEmpWage += empWage;
+            System.out.println("Day#" + totalWorkingDays + "Emp Hrs: " + empHrs + "Emp Wage: " + empWage);
         }
         return totalEmpWage;
     }
-
 }
